@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396 235" fill="currentColor">
+  <!-- Etemadi Group monogram — vector traced from brand mark, transparent background -->
+  <g id="mark">
+    <!-- CENTER T: double top bar + three stems -->
+    <rect x="78" y="0" width="240" height="8"/>
+    <rect x="78" y="15" width="240" height="8"/>
+    <rect x="170" y="15" width="11" height="220"/>
+    <rect x="192" y="15" width="11" height="220"/>
+    <rect x="214" y="15" width="11" height="220"/>
+
+    <!-- LEFT E: double spine + double arms (top / mid / bottom) -->
+    <rect x="0" y="36" width="10" height="191"/>
+    <rect x="19" y="54" width="10" height="155"/>
+    <rect x="0" y="36" width="113" height="8"/>
+    <rect x="19" y="54" width="94" height="8"/>
+    <rect x="19" y="117" width="88" height="5"/>
+    <rect x="19" y="132" width="88" height="8"/>
+    <rect x="19" y="201" width="101" height="8"/>
+    <rect x="0" y="219" width="120" height="8"/>
+
+    <!-- RIGHT E: mirror -->
+    <rect x="386" y="36" width="10" height="191"/>
+    <rect x="367" y="54" width="10" height="155"/>
+    <rect x="283" y="36" width="113" height="8"/>
+    <rect x="283" y="54" width="94" height="8"/>
+    <rect x="289" y="117" width="88" height="5"/>
+    <rect x="289" y="132" width="88" height="8"/>
+    <rect x="276" y="201" width="101" height="8"/>
+    <rect x="276" y="219" width="120" height="8"/>
+  </g>
+</svg>

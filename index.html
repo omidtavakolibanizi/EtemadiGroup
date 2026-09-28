@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>گروه اعتمادی | Etemadi Group</title>
+  <meta name="description" content="گروه تخصصی سلامت دام و طیور — دارو، واکسن، مکمل و خوراک دام و طیور" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("eg-theme");
+      var l = localStorage.getItem("eg-lang");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      if (l === "en") { document.documentElement.lang = "en"; document.documentElement.dir = "ltr"; }
+    })();
+  </script>
+</head>
+<body data-page="home">
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand" aria-label="Etemadi Group">
+      <svg class="logo-mark" viewBox="0 0 396 235" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="78" y="0" width="240" height="8"/><rect x="78" y="15" width="240" height="8"/>
+        <rect x="170" y="15" width="11" height="220"/><rect x="192" y="15" width="11" height="220"/><rect x="214" y="15" width="11" height="220"/>
+        <rect x="0" y="36" width="10" height="191"/><rect x="19" y="54" width="10" height="155"/>
+        <rect x="0" y="36" width="113" height="8"/><rect x="19" y="54" width="94" height="8"/>
+        <rect x="19" y="117" width="88" height="5"/><rect x="19" y="132" width="88" height="8"/>
+        <rect x="19" y="201" width="101" height="8"/><rect x="0" y="219" width="120" height="8"/>
+        <rect x="386" y="36" width="10" height="191"/><rect x="367" y="54" width="10" height="155"/>
+        <rect x="283" y="36" width="113" height="8"/><rect x="283" y="54" width="94" height="8"/>
+        <rect x="289" y="117" width="88" height="5"/><rect x="289" y="132" width="88" height="8"/>
+        <rect x="276" y="201" width="101" height="8"/><rect x="276" y="219" width="120" height="8"/>
+      </svg>
+      <span data-i18n="brand.name">ETEMADI GROUP</span>
+    </a>
+
+    <div class="nav-end">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active" data-i18n="nav.home">خانه</a></li>
+        <li><a href="about.html" data-i18n="nav.about">درباره ما</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تماس با ما</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button type="button" class="ctrl-btn" id="langToggle" title="Language">EN</button>
+        <button type="button" class="ctrl-btn" id="themeToggle" aria-label="Theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-theme-icon>
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav-toggle" type="button" id="navToggle" data-i18n-aria="nav.menu" aria-label="منو">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="logo-wrap">
+      <svg class="logo-mark" viewBox="0 0 396 235" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Etemadi Group">
+        <rect x="78" y="0" width="240" height="8"/><rect x="78" y="15" width="240" height="8"/>
+        <rect x="170" y="15" width="11" height="220"/><rect x="192" y="15" width="11" height="220"/><rect x="214" y="15" width="11" height="220"/>
+        <rect x="0" y="36" width="10" height="191"/><rect x="19" y="54" width="10" height="155"/>
+        <rect x="0" y="36" width="113" height="8"/><rect x="19" y="54" width="94" height="8"/>
+        <rect x="19" y="117" width="88" height="5"/><rect x="19" y="132" width="88" height="8"/>
+        <rect x="19" y="201" width="101" height="8"/><rect x="0" y="219" width="120" height="8"/>
+        <rect x="386" y="36" width="10" height="191"/><rect x="367" y="54" width="10" height="155"/>
+        <rect x="283" y="36" width="113" height="8"/><rect x="283" y="54" width="94" height="8"/>
+        <rect x="289" y="117" width="88" height="5"/><rect x="289" y="132" width="88" height="8"/>
+        <rect x="276" y="201" width="101" height="8"/><rect x="276" y="219" width="120" height="8"/>
+      </svg>
+    </div>
+    <h1 class="brand-name" data-i18n="brand.name">ETEMADI GROUP</h1>
+    <p class="tagline" data-i18n="home.tagline">گروه تخصصی سلامت دام و طیور</p>
+    <p class="tagline-sub" data-i18n="home.subtitle">Animal Health — Pharmaceuticals — Vaccines — Nutrition</p>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="sections-label">
+      <div class="section-label" id="sections-label" data-i18n="home.sections">بخش‌های مجموعه</div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3c-1.5 2-2 4-2 6 0 2 .5 3.5 2 5"/>
+              <path d="M12 3c1.5 2 2 4 2 6 0 2-.5 3.5-2 5"/>
+              <path d="M10 9h4"/>
+              <path d="M9 14c0 3 1.5 5 3 7 1.5-2 3-4 3-7"/>
+            </svg>
+          </div>
+          <h2 class="card-title" data-i18n="card.feed.title">تولید خوراک دام و طیور</h2>
+          <p class="card-title-en">Animal &amp; Poultry Feed</p>
+          <p class="card-desc" data-i18n="card.feed.desc">تولید خوراک تخصصی با فرمولاسیون علمی</p>
+          <a class="card-link" href="contact.html"><span data-i18n="card.link">ورود به سایت</span> <span class="arrow"></span></a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M12 8v8M8 12h8"/>
+            </svg>
+          </div>
+          <h2 class="card-title" data-i18n="card.pharma.title">دارو</h2>
+          <p class="card-title-en">Pharmaceuticals</p>
+          <p class="card-desc" data-i18n="card.pharma.desc">تحقیق، تولید و تامین داروهای دامپزشکی</p>
+          <a class="card-link" href="contact.html"><span data-i18n="card.link">ورود به سایت</span> <span class="arrow"></span></a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6v3H9z"/>
+              <path d="M8 6h8l1 3v9a2 2 0 01-2 2H9a2 2 0 01-2-2V9l1-3z"/>
+              <path d="M10 12h4M12 10v4"/>
+            </svg>
+          </div>
+          <h2 class="card-title" data-i18n="card.vaccine.title">واکسن</h2>
+          <p class="card-title-en">Vaccines</p>
+          <p class="card-desc" data-i18n="card.vaccine.desc">توسعه و تولید واکسن‌های پیشگیرانه</p>
+          <a class="card-link" href="contact.html"><span data-i18n="card.link">ورود به سایت</span> <span class="arrow"></span></a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.5 15.5l7-7a3.2 3.2 0 014.5 4.5l-7 7a3.2 3.2 0 01-4.5-4.5z"/>
+              <path d="M10.2 13.8l3-3"/>
+              <path d="M12.5 8.5l3 3"/>
+              <circle cx="9.2" cy="14.8" r="0.55" fill="currentColor" stroke="none"/>
+              <circle cx="10.6" cy="13.4" r="0.55" fill="currentColor" stroke="none"/>
+              <circle cx="12" cy="12" r="0.55" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h2 class="card-title" data-i18n="card.supp.title">مکمل</h2>
+          <p class="card-title-en">Supplements</p>
+          <p class="card-desc" data-i18n="card.supp.desc">مکمل‌های تغذیه‌ای برای رشد و ایمنی</p>
+          <a class="card-link" href="contact.html"><span data-i18n="card.link">ورود به سایت</span> <span class="arrow"></span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand">ETEMADI GROUP</p>
+    <p class="footer-copy" data-i18n="footer.copy">© ۱۴۰۵ گروه اعتمادی — تمامی حقوق محفوظ است</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

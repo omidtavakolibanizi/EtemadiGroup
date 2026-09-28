@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تماس با ما | گروه اعتمادی</title>
+  <meta name="description" content="راه‌های ارتباط با گروه اعتمادی" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("eg-theme");
+      var l = localStorage.getItem("eg-lang");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      if (l === "en") { document.documentElement.lang = "en"; document.documentElement.dir = "ltr"; }
+    })();
+  </script>
+</head>
+<body data-page="contact">
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand" aria-label="Etemadi Group">
+      <svg class="logo-mark" viewBox="0 0 396 235" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="78" y="0" width="240" height="8"/><rect x="78" y="15" width="240" height="8"/>
+        <rect x="170" y="15" width="11" height="220"/><rect x="192" y="15" width="11" height="220"/><rect x="214" y="15" width="11" height="220"/>
+        <rect x="0" y="36" width="10" height="191"/><rect x="19" y="54" width="10" height="155"/>
+        <rect x="0" y="36" width="113" height="8"/><rect x="19" y="54" width="94" height="8"/>
+        <rect x="19" y="117" width="88" height="5"/><rect x="19" y="132" width="88" height="8"/>
+        <rect x="19" y="201" width="101" height="8"/><rect x="0" y="219" width="120" height="8"/>
+        <rect x="386" y="36" width="10" height="191"/><rect x="367" y="54" width="10" height="155"/>
+        <rect x="283" y="36" width="113" height="8"/><rect x="283" y="54" width="94" height="8"/>
+        <rect x="289" y="117" width="88" height="5"/><rect x="289" y="132" width="88" height="8"/>
+        <rect x="276" y="201" width="101" height="8"/><rect x="276" y="219" width="120" height="8"/>
+      </svg>
+      <span data-i18n="brand.name">ETEMADI GROUP</span>
+    </a>
+
+    <div class="nav-end">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav.home">خانه</a></li>
+        <li><a href="about.html" data-i18n="nav.about">درباره ما</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav.contact">تماس با ما</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button type="button" class="ctrl-btn" id="langToggle" title="Language">EN</button>
+        <button type="button" class="ctrl-btn" id="themeToggle" aria-label="Theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-theme-icon>
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="nav-toggle" type="button" id="navToggle" data-i18n-aria="nav.menu" aria-label="منو">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <h1 data-i18n="contact.title">تماس با ما</h1>
+    <p data-i18n="contact.lead">برای ارتباط با گروه اعتمادی از راه‌های زیر استفاده کنید</p>
+  </header>
+
+  <main class="contact-grid">
+    <aside class="contact-info">
+      <h2 data-i18n="contact.info">اطلاعات تماس</h2>
+
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="info-label" data-i18n="contact.phone">تلفن</div>
+          <div class="info-value ltr">021-0000-0000</div>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div>
+          <div class="info-label" data-i18n="contact.email">ایمیل</div>
+          <div class="info-value ltr">info@etemadigroup.com</div>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="info-label" data-i18n="contact.address">آدرس</div>
+          <div class="info-value" data-i18n="contact.address.value">تهران، ایران</div>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div>
+          <div class="info-label" data-i18n="contact.hours">ساعات کاری</div>
+          <div class="info-value" data-i18n="contact.hours.value">شنبه تا چهارشنبه — ۹ تا ۱۷</div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="contact-form-wrap">
+      <h2 data-i18n="contact.form">ارسال پیام</h2>
+      <form id="contactForm" action="#" method="post">
+        <div class="form-group">
+          <label for="name" data-i18n="contact.name">نام و نام خانوادگی</label>
+          <input type="text" id="name" name="name" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="contact.email.field">ایمیل</label>
+          <input type="email" id="email" name="email" required autocomplete="email" dir="ltr" />
+        </div>
+        <div class="form-group">
+          <label for="phone" data-i18n="contact.phone.field">شماره تماس</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" dir="ltr" />
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="contact.message">پیام</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn" data-i18n="contact.submit">ارسال پیام</button>
+        <p class="form-note" id="formNote" data-i18n="contact.note">شماره و ایمیل را با اطلاعات واقعی خود جایگزین کنید.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="footer-nav">
+      <li><a href="index.html" data-i18n="nav.home">خانه</a></li>
+      <li><a href="about.html" data-i18n="nav.about">درباره ما</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">تماس با ما</a></li>
+    </ul>
+    <p class="footer-brand">ETEMADI GROUP</p>
+    <p class="footer-copy" data-i18n="footer.copy">© ۱۴۰۵ گروه اعتمادی — تمامی حقوق محفوظ است</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
