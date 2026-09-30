@@ -66,7 +66,9 @@ body {
   color: var(--text);
   min-height: 100vh;
   line-height: 1.7;
-  transition: background 0.35s ease, color 0.25s ease;
+  transition:
+    background 0.35s ease,
+    color 0.25s ease;
 }
 
 html[dir="ltr"] body {
@@ -97,7 +99,9 @@ img {
   background: var(--bg-nav);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  transition: background 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
 }
 
 .nav-brand {
@@ -138,7 +142,9 @@ img {
   font-size: 0.88rem;
   color: var(--text-muted);
   border-radius: 4px;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 .nav-links a:hover,
@@ -164,7 +170,10 @@ img {
   font-weight: 600;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .ctrl-btn:hover {
@@ -291,14 +300,26 @@ html[lang="fa"] .tagline-sub {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s, background 0.3s;
+  transition:
+    border-color 0.25s,
+    transform 0.25s,
+    box-shadow 0.25s,
+    background 0.3s;
   animation: fadeUp 0.7s ease both;
 }
 
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
-.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 .card:hover {
   border-color: var(--border-hover);
@@ -307,8 +328,8 @@ html[lang="fa"] .tagline-sub {
 }
 
 .card-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border: 1px solid var(--icon-frame);
   border-radius: 4px;
   display: flex;
@@ -319,8 +340,21 @@ html[lang="fa"] .tagline-sub {
 }
 
 .card-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+}
+
+.card-icon--feed .feed-mark {
+  width: 38px;
+  height: 52px;
+  display: block;
+  object-fit: contain;
+  /* keep shape, force icon color like other card icons */
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="light"] .card-icon--feed .feed-mark {
+  filter: brightness(0);
 }
 
 .card-title {
@@ -404,7 +438,9 @@ html[dir="rtl"] .card-link .arrow::before {
   border-radius: 6px;
   padding: 2rem 2.25rem;
   margin-bottom: 1.25rem;
-  transition: background 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
 }
 
 .about-block h2 {
@@ -463,7 +499,9 @@ html[dir="rtl"] .card-link .arrow::before {
   border-radius: 6px;
   padding: 2rem;
   animation: fadeUp 0.7s ease both;
-  transition: background 0.3s, border-color 0.3s;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
 }
 
 .contact-form-wrap {
@@ -543,7 +581,9 @@ html[dir="rtl"] .card-link .arrow::before {
   font-family: inherit;
   font-size: 0.9rem;
   outline: none;
-  transition: border-color 0.2s, background 0.3s;
+  transition:
+    border-color 0.2s,
+    background 0.3s;
 }
 
 .form-group input:focus,
@@ -567,7 +607,9 @@ html[dir="rtl"] .card-link .arrow::before {
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
 }
 
 .btn:hover {
