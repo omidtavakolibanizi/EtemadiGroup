@@ -1,106 +1,118 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="fa" dir="rtl" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>درباره ما | گروه اعتمادی</title>
-  <meta name="description" content="آشنایی با گروه اعتمادی — گروه تخصصی سلامت دام و طیور" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-  <script>
-    (function () {
-      var t = localStorage.getItem("eg-theme");
-      var l = localStorage.getItem("eg-lang");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-      if (l === "en") { document.documentElement.lang = "en"; document.documentElement.dir = "ltr"; }
-    })();
-  </script>
-</head>
-<body data-page="about">
-  <nav class="site-nav">
-    <a href="index.html" class="nav-brand" aria-label="Etemadi Group">
-      <svg class="logo-mark" viewBox="0 0 396 235" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="78" y="0" width="240" height="8"/><rect x="78" y="15" width="240" height="8"/>
-        <rect x="170" y="15" width="11" height="220"/><rect x="192" y="15" width="11" height="220"/><rect x="214" y="15" width="11" height="220"/>
-        <rect x="0" y="36" width="10" height="191"/><rect x="19" y="54" width="10" height="155"/>
-        <rect x="0" y="36" width="113" height="8"/><rect x="19" y="54" width="94" height="8"/>
-        <rect x="19" y="117" width="88" height="5"/><rect x="19" y="132" width="88" height="8"/>
-        <rect x="19" y="201" width="101" height="8"/><rect x="0" y="219" width="120" height="8"/>
-        <rect x="386" y="36" width="10" height="191"/><rect x="367" y="54" width="10" height="155"/>
-        <rect x="283" y="36" width="113" height="8"/><rect x="283" y="54" width="94" height="8"/>
-        <rect x="289" y="117" width="88" height="5"/><rect x="289" y="132" width="88" height="8"/>
-        <rect x="276" y="201" width="101" height="8"/><rect x="276" y="219" width="120" height="8"/>
-      </svg>
-      <span data-i18n="brand.name">ETEMADI GROUP</span>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما | گروه اعتمادی</title>
+    <meta name="description" content="آشنایی با گروه اعتمادی — گروه تخصصی سلامت دام و طیور" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("eg-theme");
+        var l = localStorage.getItem("eg-lang");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        if (l === "en") {
+          document.documentElement.lang = "en";
+          document.documentElement.dir = "ltr";
+        }
+      })();
+    </script>
+  </head>
+  <body data-page="about">
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand" aria-label="Etemadi Group">
+        <img class="logo-mark" src="assets/logo.png" width="160" height="65" alt="Etemadi Group" />
+      </a>
 
-    <div class="nav-end">
-      <ul class="nav-links" id="navLinks">
+      <div class="nav-end">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-i18n="nav.home">خانه</a></li>
+          <li><a href="about.html" class="active" data-i18n="nav.about">درباره ما</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">تماس با ما</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button type="button" class="ctrl-btn" id="langToggle" title="Language">EN</button>
+          <button type="button" class="ctrl-btn" id="themeToggle" aria-label="Theme">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              data-theme-icon
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              />
+            </svg>
+          </button>
+          <button
+            class="nav-toggle"
+            type="button"
+            id="navToggle"
+            data-i18n-aria="nav.menu"
+            aria-label="منو"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-hero">
+      <h1 data-i18n="about.title">درباره ما</h1>
+      <p data-i18n="about.lead">گروه تخصصی سلامت دام و طیور</p>
+    </header>
+
+    <main class="page-content">
+      <div class="about-block">
+        <h2 data-i18n="about.who.title">گروه اعتمادی</h2>
+        <p data-i18n="about.who.body">
+          گروه اعتمادی مجموعه‌ای تخصصی در حوزه سلامت دام و طیور است که با تمرکز بر تحقیق، تولید و
+          تامین، زنجیره‌ای کامل از دارو، واکسن، مکمل‌های تغذیه‌ای و خوراک دام و طیور را پوشش می‌دهد.
+          هدف ما ارتقای کیفیت سلامت دام و طیور و حمایت از تولیدکنندگان این حوزه است.
+        </p>
+      </div>
+
+      <div class="about-block">
+        <h2 data-i18n="about.areas.title">حوزه‌های فعالیت</h2>
+        <ul class="about-list">
+          <li data-i18n="about.areas.1">تحقیق، تولید و تامین داروهای دامپزشکی</li>
+          <li data-i18n="about.areas.2">توسعه و تولید واکسن‌های پیشگیرانه</li>
+          <li data-i18n="about.areas.3">مکمل‌های تغذیه‌ای برای رشد و ایمنی</li>
+          <li data-i18n="about.areas.4">تولید خوراک تخصصی دام و طیور با فرمولاسیون علمی</li>
+        </ul>
+      </div>
+
+      <div class="about-block">
+        <h2 data-i18n="about.vision.title">چشم‌انداز</h2>
+        <p data-i18n="about.vision.body">
+          تبدیل شدن به مرجع قابل اعتماد در سلامت دام و طیور، با تکیه بر دانش علمی، کیفیت محصول و
+          همراهی مستمر با دامداران و تولیدکنندگان صنعت دام و طیور.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <ul class="footer-nav">
         <li><a href="index.html" data-i18n="nav.home">خانه</a></li>
-        <li><a href="about.html" class="active" data-i18n="nav.about">درباره ما</a></li>
+        <li><a href="about.html" data-i18n="nav.about">درباره ما</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">تماس با ما</a></li>
       </ul>
+      <p class="footer-brand">ETEMADI GROUP</p>
+      <p class="footer-copy" data-i18n="footer.copy">© ۱۴۰۵ گروه اعتمادی — تمامی حقوق محفوظ است</p>
+    </footer>
 
-      <div class="nav-controls">
-        <button type="button" class="ctrl-btn" id="langToggle" title="Language">EN</button>
-        <button type="button" class="ctrl-btn" id="themeToggle" aria-label="Theme">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-theme-icon>
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-          </svg>
-        </button>
-        <button class="nav-toggle" type="button" id="navToggle" data-i18n-aria="nav.menu" aria-label="منو">☰</button>
-      </div>
-    </div>
-  </nav>
-
-  <header class="page-hero">
-    <h1 data-i18n="about.title">درباره ما</h1>
-    <p data-i18n="about.lead">گروه تخصصی سلامت دام و طیور</p>
-  </header>
-
-  <main class="page-content">
-    <div class="about-block">
-      <h2 data-i18n="about.who.title">گروه اعتمادی</h2>
-      <p data-i18n="about.who.body">
-        گروه اعتمادی مجموعه‌ای تخصصی در حوزه سلامت دام و طیور است که با تمرکز بر تحقیق،
-        تولید و تامین، زنجیره‌ای کامل از دارو، واکسن، مکمل‌های تغذیه‌ای و خوراک دام و طیور را
-        پوشش می‌دهد. هدف ما ارتقای کیفیت سلامت دام و طیور و حمایت از تولیدکنندگان این حوزه است.
-      </p>
-    </div>
-
-    <div class="about-block">
-      <h2 data-i18n="about.areas.title">حوزه‌های فعالیت</h2>
-      <ul class="about-list">
-        <li data-i18n="about.areas.1">تحقیق، تولید و تامین داروهای دامپزشکی</li>
-        <li data-i18n="about.areas.2">توسعه و تولید واکسن‌های پیشگیرانه</li>
-        <li data-i18n="about.areas.3">مکمل‌های تغذیه‌ای برای رشد و ایمنی</li>
-        <li data-i18n="about.areas.4">تولید خوراک تخصصی دام و طیور با فرمولاسیون علمی</li>
-      </ul>
-    </div>
-
-    <div class="about-block">
-      <h2 data-i18n="about.vision.title">چشم‌انداز</h2>
-      <p data-i18n="about.vision.body">
-        تبدیل شدن به مرجع قابل اعتماد در سلامت دام و طیور، با تکیه بر دانش علمی،
-        کیفیت محصول و همراهی مستمر با دامداران و تولیدکنندگان صنعت دام و طیور.
-      </p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <ul class="footer-nav">
-      <li><a href="index.html" data-i18n="nav.home">خانه</a></li>
-      <li><a href="about.html" data-i18n="nav.about">درباره ما</a></li>
-      <li><a href="contact.html" data-i18n="nav.contact">تماس با ما</a></li>
-    </ul>
-    <p class="footer-brand">ETEMADI GROUP</p>
-    <p class="footer-copy" data-i18n="footer.copy">© ۱۴۰۵ گروه اعتمادی — تمامی حقوق محفوظ است</p>
-  </footer>
-
-  <script src="js/app.js"></script>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>

@@ -107,19 +107,12 @@ img {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  font-weight: 600;
-  color: var(--accent);
   flex-shrink: 0;
 }
 
 .nav-brand .logo-mark {
-  width: 38px;
-  height: auto;
-  color: var(--accent);
+  width: auto;
+  height: 36px;
   display: block;
   flex-shrink: 0;
 }
@@ -216,10 +209,9 @@ img {
 }
 
 .logo-wrap .logo-mark {
-  width: min(180px, 46vw);
+  width: min(320px, 78vw);
   height: auto;
   margin: 0 auto;
-  color: var(--accent);
   display: block;
   filter: drop-shadow(0 4px 18px rgba(180, 200, 230, 0.12));
   animation: logoIn 0.9s ease both;
@@ -237,6 +229,18 @@ img {
   color: var(--accent);
   margin-bottom: 0.85rem;
   padding-inline-end: 0.28em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .tagline {
@@ -344,17 +348,25 @@ html[lang="fa"] .tagline-sub {
   height: 32px;
 }
 
+.card-icon--feed {
+  width: auto;
+  height: auto;
+  min-height: 56px;
+  padding: 0.35rem 0.5rem;
+  border: none;
+}
+
 .card-icon--feed .feed-mark {
-  width: 38px;
-  height: 52px;
+  width: 108px;
+  height: auto;
   display: block;
   object-fit: contain;
-  /* keep shape, force icon color like other card icons */
+  /* black logo → light on dark theme */
   filter: brightness(0) invert(1);
 }
 
 [data-theme="light"] .card-icon--feed .feed-mark {
-  filter: brightness(0);
+  filter: none;
 }
 
 .card-title {
